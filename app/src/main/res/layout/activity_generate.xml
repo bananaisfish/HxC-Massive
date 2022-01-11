@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#FDFDFD"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".GenerateActivity">
+
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="13dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginEnd="74dp"
+            android:src="@drawable/btn_back"
+            app:layout_constraintEnd_toStartOf="@+id/textView11"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/product_sans_bold"
+            android:text="Generate Text"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageView5"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="63dp"
+            android:layout_marginEnd="35dp"
+            android:src="@drawable/btn_instruksi"
+            app:layout_constraintBottom_toBottomOf="@+id/textView11"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView11"
+            app:layout_constraintTop_toTopOf="@+id/textView11" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginEnd="302dp"
+            android:fontFamily="@font/product_sans_regular"
+            android:text="Penerima"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/menu_drop"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:background="@drawable/dropdown"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView12">
+
+            <AutoCompleteTextView
+                android:id="@+id/drop_items"
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/product_sans_regular"
+                android:inputType="none"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Bapak"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/product_sans_regular"
+            android:text="Salam"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            app:layout_constraintStart_toStartOf="@+id/textView12"
+            app:layout_constraintTop_toBottomOf="@+id/menu_drop" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/menu_drop2"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense.ExposedDropdownMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/dropdown"
+            android:layout_marginTop="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+            <AutoCompleteTextView
+                android:id="@+id/drop_items2"
+                android:layout_width="340dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:fontFamily="@font/product_sans_regular"
+                android:inputType="none"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:text="Selamat Pagi"
+                android:textColor="@color/black"
+                android:textSize="16dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/product_sans_regular"
+            android:text="Tujuan"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="@+id/textView13"
+            app:layout_constraintTop_toBottomOf="@+id/menu_drop2" />
+
+        <EditText
+            android:id="@+id/editText1"
+            android:layout_width="340dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="15dp"
+            android:hint="Apa tujuan menghubungi dosen?"
+            android:inputType="textMultiLine"
+            android:background="@drawable/edit_text"
+            android:fontFamily="@font/product_sans_light"
+            android:padding="10dp"
+            android:textColorHint="#B6B6B6"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:fillViewport="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText1">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/tujuan1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:background="@drawable/bertanya" />
+
+                <ImageView
+                    android:id="@+id/tujuan2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/izin" />
+
+                <ImageView
+                    android:id="@+id/tujuan3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/bertanya2" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/product_sans_regular"
+            android:text="Isi Pesan"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="@+id/textView14"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
+
+        <EditText
+            android:id="@+id/editText2"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit_text"
+            android:fontFamily="@font/product_sans_light"
+            android:padding="10dp"
+            android:hint="Tulis isi pesan"
+            android:textColorHint="#B6B6B6"
+            android:textSize="16dp"
+            app:layout_constraintStart_toStartOf="@+id/textView15"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:fontFamily="@font/product_sans_regular"
+            android:text="Terima Kasih"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="@+id/editText2"
+            app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit_text"
+            android:fontFamily="@font/product_sans_light"
+            android:hint="Ucapkan terimakasih!"
+            android:inputType="textMultiLine"
+            android:padding="10dp"
+            android:textColorHint="#B6B6B6"
+            android:textSize="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+        <HorizontalScrollView
+            android:id="@+id/horizontalScrollView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="@+id/editText3"
+            app:layout_constraintStart_toStartOf="@+id/editText3"
+            app:layout_constraintTop_toBottomOf="@+id/editText3">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/terimakasih1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="35dp"
+                    android:src="@drawable/terimakasih1" />
+
+                <ImageView
+                    android:id="@+id/terimakasih2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/terimakasih2" />
+
+                <ImageView
+                    android:id="@+id/terimakasih3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/terimakasih3" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <Button
+            android:id="@+id/btnClear"
+            android:layout_width="85dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="141dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="185dp"
+            android:layout_marginBottom="32dp"
+            android:background="@drawable/custom_button2"
+            android:fontFamily="@font/product_sans_regular"
+            android:text="Clear"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2"/>
+
+        <Button
+            android:onClick="ShowPopUp"
+            android:id="@+id/btnGenerate"
+            android:layout_width="135dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/custom_button"
+            android:fontFamily="@font/product_sans_regular"
+            android:text="Generate"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="@+id/btnClear"
+            app:layout_constraintStart_toEndOf="@+id/btnClear"
+            app:layout_constraintTop_toTopOf="@+id/btnClear" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

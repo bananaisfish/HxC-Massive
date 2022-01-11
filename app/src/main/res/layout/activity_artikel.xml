@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FDFDFD">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".ArtikelActivity">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/artikel_pict"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="196dp"
+            android:src="@drawable/hover"
+            app:layout_constraintEnd_toEndOf="@+id/imageView7"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/imageView7"
+            app:layout_constraintTop_toTopOf="@+id/imageView7" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="52dp"
+            android:fontFamily="@font/product_sans_bold"
+            android:text="8 Etika Menghubungi Dosen Yang \n Sering Diabaikan Mahasiswa"
+            android:textColor="@color/black"
+            android:textSize="22dp"
+            app:layout_constraintStart_toStartOf="@+id/imageView8"
+            app:layout_constraintTop_toTopOf="@+id/imageView8" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="376dp"
+            android:layout_height="107dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/product_sans_regular"
+            android:text="Etika menghubungi dosen dari waktu ke waktu \n memang semakin memprihatinkan. Pasalnya, \n etika orang-orang dahulu dengan orang-orang \n sekarang dalam menghubungi dosen atau guru mereka mengalami banyak kemunduran."
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            app:layout_constraintEnd_toEndOf="@+id/textView17"
+            app:layout_constraintStart_toStartOf="@+id/textView17"
+            app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/product_sans_regular"
+            android:text="Apakah itu benar?"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="@+id/textView18"
+            app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="376dp"
+            android:layout_height="107dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/product_sans_regular"
+            android:text="Di era teknologi yang serba update seperti sekarang, kita sudah melihat banyak video beredar sikap anak-anak kids jaman now yang bersikap tidak sopan dengan dosen dan guru mereka."
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="@+id/textView19"
+            app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="378dp"
+            android:layout_height="87dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/product_sans_regular"
+            android:text="Bahkan berani menaikan nada keras. Atau kasus seorang mahasiswa yang mengirimkan pesan kepada dosen ditengah malam, dengan penggunaan bahasa yang tidak sopan."
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="@+id/textView20"
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="366dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/product_sans_regular"
+            android:text="Seolah-olah memerintah dan menggurui. Fenomena ini tentu menjadi keprihatinan."
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="@+id/textView21"
+            app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="366dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/product_sans_regular"
+            android:text="Bahkan, menganggap dosen yang sebenarnya baik itu sebagai Dosen Killer."
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            app:layout_constraintStart_toStartOf="@+id/textView22"
+            app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+        <TextView
+            android:layout_width="366dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="16dp"
+            android:fontFamily="@font/product_sans_regular"
+            android:text="Dari sisi yang lain, bisa jadi lunturnya etika menghubungi dosen karena ada alasannya. \n \nKita tahu bahwasanya ada jika ada akibat pasti ada sebab. \n \nMungkin salah satunya karena disebabkan pendidikan etika sejak dini kurang mendapatkan perhatian dari pihak sekolah ataupun pihak keluarga. \n \nBisa juga dipengaruhi oleh faktor tontonan yang tidak mendidik, \n\nsehingga penonton yang mudah dipengaruhi pun akhirnya terpengaruh dan mengubah cara berpikir mereka dalam memperlakukan oranglain, \n \ntermasuk memperlakukan dosen. \n \nTerlepas dari banyak sebab akibat yang ditimbulkan. Barangkali juga ada yang tidak tahu, memang seharusnya etika menghubungi dosen itu seperti apa dan bagaimana sih? \n \nNah, berikut ulasannya."
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/textView23"
+            app:layout_constraintTop_toBottomOf="@+id/textView23" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
